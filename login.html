@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Login Form</title>
+        <style>
+            label{
+                display: inline-block;
+                width: 150px;
+            }
+            .sow{
+                text-align: center;
+            }
+            body{
+                background-color:pink;
+            }
+            h1{
+                text-align: center;
+                font-family: sans-serif;
+            }
+            #log{
+                padding: 20px;
+                color: black;
+                
+            }
+
+        </style>
+       </head>
+<body>
+    <h1>Login form</h1>
+    <div class="sow">
+    <form method="post">
+        <label for="res">Enter resgister no: </label> <input type="text" value=""  name="regno" id="regno" /><br><br>
+        <label for="pass">Enter password</label>       <input type="password" value=""  name="pass" id="pass" /><br><br>
+
+        <input type="submit" name="login" id="log"  value="submit" onclick="sub()" />
+         <input type="reset" name="re"  id="hj"value="Reset" />
+    </form></div>
+    <script>
+
+        function sub()
+        {
+            
+        var regno=document.getElementById('regno').value;
+        var psswd=document.getElementById('pass').value;
+            
+            
+            if(regno=="117cs20043" && psswd=="123456")
+            {
+                window.open('index.html');
+
+            }
+            else{
+                
+                window.open('login.html');
+            }
+        }
+    </script>
+
+</body>
+</html>

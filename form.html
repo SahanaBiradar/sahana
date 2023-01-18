@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login registration form</title>
+</head>
+<body>
+    <div>
+        <from method="post">
+            <label>Enter Your RegNo </label>
+            <input type="text" id="t1" name="regno" value="" /><br><br>
+            <label> Enter Your Password</label>
+            <input type="text" id="t2" name="pass" value="" /><br><br>
+            <label> Enter Your Email </label>
+            <input  type="text" id="t3" name="email" value="" /><br><br>
+            <input type="button" id="s1" name="submit" value="submit" onclick="sub()" />
+            <input type="reset" id="s2" name="reset" value="reset">
+        </from>
+    </div>
+    <script> 
+    function sub()
+    {
+        var regno=document.getElementById("t1").value;
+        var pass=document.getElementById("t2").value;
+        var email=document.getElementById("t3").value;
+        if (regno=="117CS20X02" && pass=="2004" && email=="sahanakotrappa09@gmail.com" )
+        {
+            alert ("sucess");
+        }
+        else
+        {
+            alert ("unsucess");
+
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
